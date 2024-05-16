@@ -1,27 +1,24 @@
-Readme for MRCP4J v0.2
-======================
+# MRCP4J
 
-Overview
+## Overview
 --------
 
   MRCP4J provides a Java API that encapsulates the MRCPv2 protocol and can be used to implement MRCPv2 clients and/or servers.
 
 
-Prerequisites
+## Prerequisites
 -------------
 
   MRCP4J requires JDK 5.0 or higher which can be downloaded here: http://java.sun.com/j2se/1.5.0/download.jsp
 
 
-Dependencies
+## Dependencies
 ------------
 
   MRCP4J has the following dependencies:
 
 +--------------------+-------------+--------------------------------------------------+
 | Project            | Version     |  Download URL                                    |
-+--------------------+-------------+--------------------------------------------------+
-| Commons Logging    | 1.1         | http://jakarta.apache.org/commons/logging/       |
 +--------------------+-------------+--------------------------------------------------+
 | MINA               | 0.8.0       | http://directory.apache.org/subprojects/network/ |
 +--------------------+-------------+--------------------------------------------------+
@@ -32,14 +29,21 @@ Dependencies
   Distribution jars for the above listed dependencies need to be included in your classpath in order to use MRCP4J.  They are available for download from the provided URLs and are also included in the MRCP4J binary distribution.
 
 
-Installation
+## Installation
 ------------
 
   To install MRCP4J extract the mrcp4j-<version>.jar from the binary distribution archive and add it to your application's classpath along with the above listed dependencies.
 
+pom.xml
+```
+<dependency>
+  <groupId>de.com.litongjava</groupId>
+  <artifactId>mrcp4j</artifactId>
+  <version>0.2.1</version>
+</dependency>
+```
 
-
-Change Log for MRCP4J
+## Change Log for MRCP4J
 =====================
 
 MRCP4J v0.2
@@ -61,7 +65,7 @@ No prior release to compare with.
 
 
 
-Further Information
+## Further Information
 ===================
 
   For more information please see the MRCP4J Project Home at http://mrcp4j.sourceforge.net.

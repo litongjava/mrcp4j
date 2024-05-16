@@ -1,12 +1,11 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
-  <groupId>de.dfki.tarot.thirdparty</groupId>
+  <groupId>de.com.litongjava</groupId>
   <artifactId>mrcp4j</artifactId>
+  <version>0.2.1</version>
   <packaging>jar</packaging>
   <name>MRCP4J</name>
-  <version>0.2-dfki-SNAPSHOT</version>
   <description>MRCP4J provides a Java API that encapsulates the MRCPv2 protocol and can be used to implement MRCP clients and/or servers.</description>
   <url>http://${project.artifactId}.sourceforge.net</url>
   <inceptionYear>2005</inceptionYear>
@@ -67,6 +66,12 @@
       </roles>
       <timezone>-8</timezone>
     </developer>
+    <developer>
+      <id>litongjava</id>
+      <name>Tong Li</name>
+      <email>litongjava001@gmail.com</email>
+      <url>https://github.com/litongjava</url>
+    </developer>
   </developers>
 
   <licenses>
@@ -79,6 +84,7 @@
   <properties>
     <project.group.id>143504</project.group.id>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <lombok-version>1.18.30</lombok-version>
   </properties>
 
   <scm>
@@ -162,14 +168,15 @@
       <version>0.8.0</version>
       <scope>compile</scope>
     </dependency>
+
     <dependency>
-      <groupId>commons-logging</groupId>
-      <artifactId>commons-logging</artifactId>
-      <version>1.1</version>
-      <scope>compile</scope>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok-version}</version>
+      <optional>true</optional>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
-
   <distributionManagement>
     <repository>
       <uniqueVersion>false</uniqueVersion>
